@@ -20,6 +20,18 @@ class TaskType(str, Enum):
     EXECUTE = "execute"
 
 
+class ValidationStatus(str, Enum):
+    VALID = "valid"
+    NEEDS_CLARIFICATION = "needs_clarification"
+    REJECTED = "rejected"
+
+
+class ValidationResult(BaseModel):
+    status: ValidationStatus
+    reasons: List[str] = Field(default_factory=list)
+    clarification_questions: List[str] = Field(default_factory=list)
+
+
 # Core schemas
 
 class IntentFrame(BaseModel):
