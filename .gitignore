@@ -1,0 +1,48 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --------------------
+# Virtual environments
+# --------------------
+.venv/
+venv/
+env/
+
+# --------------------
+# Packaging / build
+# --------------------
+build/
+dist/
+*.egg-info/
+
+# --------------------
+# Testing
+# --------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --------------------
+# IDEs / editors
+# --------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --------------------
+# OS
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Project-specific
+# --------------------
+*.json
+*.log
